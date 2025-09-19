@@ -13,7 +13,9 @@ module.exports = defineConfig({
     pageLoadTimeout: 60000,       // For cy.visit page load
     requestTimeout: 30000,        // For cy.request, cy.intercept, etc.
     responseTimeout: 30000,       // For waiting on XHR/AJAX
+    
 
+    
     
     setupNodeEvents(on, config) {
       on('before:browser:launch', (browser = {}, launchOptions) => {

@@ -14,4 +14,16 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+//import './commands'//
+
+beforeEach(() => {
+  cy.viewport(1920, 1080);
+});
+
+/// <reference types="cypress" />
+
+// Import custom commands
+import './commands';
+
+// Import Cypress-XPath to use cy.xpath globally
+import 'cypress-xpath';
